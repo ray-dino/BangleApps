@@ -10,6 +10,10 @@ function beep() {
   ()=>Bangle.beep(200,440.00*8));
 }
 
-var beepInterval = setInterval(function() {
-  beep();
-}, 20000);
+function start_timer() {
+  var beepInterval = setInterval(function() {
+    beep();
+  }, 20000);
+}
+
+start_timer();
